@@ -8,4 +8,11 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        open: true,
+        host: true,
+        watch: {
+            usePolling: true,
+        }
+    }
 });

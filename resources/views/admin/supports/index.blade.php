@@ -16,8 +16,9 @@
                 <td>{{ $support->status }}</td>
                 <td>{{ $support->body }}</td>
                 <td>
-                    {{--  <a href="{{ route('admin.supports.edit', $support->id) }}">Editar</a>
-                    <a href="{{ route('admin.supports.destroy', $support->id) }}">Excluir</a> --}}
+                    <a href="{{ route('supports.show', $support->id) }}">ir</a>
+                    <a href="{{ route('supports.edit', $support->id) }}">editar</a>
+                    {{-- <a href="{{ route('admin.supports.destroy', $support->id) }}">Excluir</a> --}}
                 </td>
             </tr>
         @endforeach
